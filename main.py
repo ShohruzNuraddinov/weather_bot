@@ -161,10 +161,6 @@ def main() -> None:
     )
     dispatcher.add_handler(conv_handler)
 
-    # on non command i.e message - echo the message on Telegram
-    dispatcher.add_handler(MessageHandler(
-        Filters.text & ~Filters.command, echo))
-
     # Start the Bot
     updater.start_polling()
 
