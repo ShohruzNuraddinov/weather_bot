@@ -1,0 +1,8 @@
+[
+    {"id":"16","region_id":"1","name_uz":"Beruniy tumani", "data":"beruniy"},
+    {"id":"34","region_id":"2","name_uz":"Buloqboshi tumani", "data":"Buloqboshi"},
+    {"id":"50","region_id":"3","name_uz":"G'ijduvon tumani", "data":"G'ijduvon"},
+    {"id":"65","region_id":"4","name_uz":"Jizzax shahri", "data":"Jizzax"},
+    {"id":"77","region_id":"5","name_uz":"Qarshi shahri", "data":"Qarshi"},
+    {"id":"199","region_id":"14","name_uz":"Toshkent Shahri", "data":"Tashkent"}
+]
