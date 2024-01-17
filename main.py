@@ -137,7 +137,6 @@ def main() -> None:
 
     # on different commands - answer in Telegram
     dispatcher.add_handler(CommandHandler("help", help_command))
-    # dispatcher.add_handler(CommandHandler('region', change_region))
     dispatcher.add_handler(MessageHandler(
         Filters.regex('^Bugungi ob-havo ⛅️$'), today_weather))
     dispatcher.add_handler(MessageHandler(
