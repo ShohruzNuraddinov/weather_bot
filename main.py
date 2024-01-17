@@ -22,10 +22,7 @@ REGION_STATE = 1
 DISTRTC_STATE = 2
 
 
-# Define a few command handlers. These usually take the two arguments update and
-# context.
 def start(update: Update, context: CallbackContext) -> None:
-    """Send a message when the command /start is issued."""
     btn = regions_btn()
     user = update.effective_user
 
@@ -53,7 +50,6 @@ def change_region(update: Update, context: CallbackContext) -> None:
 
 
 def region_select(update: Update, context: CallbackContext) -> None:
-    """Send a message when the command /start is issued."""
     query = update.callback_query
     query.answer()
     region_id = query.data.split("=")[1]
@@ -128,17 +124,10 @@ def one_week_weather(update: Update, context: CallbackContext) -> None:
 
 
 def help_command(update: Update, context: CallbackContext) -> None:
-    """Send a message when the command /help is issued."""
     update.message.reply_text('Help!')
 
 
-def echo(update: Update, context: CallbackContext) -> None:
-    """Echo the user message."""
-    update.message.reply_text(update.message.text)
-
-
 def main() -> None:
-    """Start the bot."""
     # Create the Updater and pass it your bot's token.
     updater = Updater(
         "5177104446:AAEJWX4QdWkPOsrjHV5MJOEN3GUFzs2k1Oo", use_context=True)
